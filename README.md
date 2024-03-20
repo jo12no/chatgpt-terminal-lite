@@ -2,6 +2,7 @@
 A lightweight Python CLI application that opens an interactive chat session with OpenAI language models using the provided API. 
 
 <img width="554" alt="example" src="https://github.com/jo12no/chatgpt-terminal-lite/assets/19522573/509a8589-eca1-40f3-8832-486df4b89c92">
+
 ## Getting Started
 * Add your OpenAI API key to either the config.py file or as an enviroment variable:
 _export OPEN_API_KEY="KEY"_
