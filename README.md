@@ -13,4 +13,4 @@ _alias chat='python path_to_script.py'_
 ## Considerations
 * It's a significant productivity boost for me to be able to quickly ask throwaway questions while in the middle of doing work with a terminal open. 
 * Privacy and security centric because it is a simple wrapper around the OpenAI API, without introducing another 3rd party. 
-* Uses the latest conversional API endpoints. 
+* Uses the latest conversational API endpoints. 
