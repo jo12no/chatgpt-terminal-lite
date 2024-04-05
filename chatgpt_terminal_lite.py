@@ -9,16 +9,16 @@ import os
 from openai import OpenAI
 import config
 
-API_KEY = config.API_KEY if config.API_KEY else os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", config.OPENAI_API_KEY)
 SESSION_PROMPT = config.SESSION_PROMPT
 MODEL_PARAMS = config.MODEL_PARAMS
 
 
 def create_client():
     """Creates an OpenAI client with the specified API key."""
-    if not API_KEY:
+    if not OPENAI_API_KEY:
         raise ValueError("API key must be set in config file or environment variable.")
-    return OpenAI(api_key=API_KEY)
+    return OpenAI(api_key=OPENAI_API_KEY)
 
 
 def start_chat(client):

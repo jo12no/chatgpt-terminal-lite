@@ -14,7 +14,7 @@ If you prefer to enter the API key directly (not recommended for production), re
 Otherwise, the code will attempt to read the key from the environment variable.
 """
 
-API_KEY = ""
+OPENAI_API_KEY = ""
 
 # Constants
 MODEL_PARAMS = {
