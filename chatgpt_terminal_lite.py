@@ -54,7 +54,7 @@ def start_chat(client):
         try:
             response = client.chat.completions.create(**MODEL_PARAMS, messages=messages)
             answer = response.choices[0].message.content
-            print(f"AI Response: {answer}")
+            print(f"AI Response:\n {answer}")
             messages.append({"role": "assistant", "content": answer})
         except Exception as e:
             print(f"An error occurred: {e}")
