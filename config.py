@@ -18,7 +18,7 @@ OPENAI_API_KEY = ""
 
 # Constants
 MODEL_PARAMS = {
-    "model": "gpt-4",
+    "model": "gpt-4-turbo-2024-04-09",
     "n": 1,  # of samples
     "temperature": 1.0,
     "max_tokens": 500,
