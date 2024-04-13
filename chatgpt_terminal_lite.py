@@ -41,7 +41,7 @@ def start_chat(client):
     program flow. 
     """
     messages = [{"role": "system", "content": SESSION_PROMPT}] if SESSION_PROMPT else []
-
+    print(f"model: {MODEL_PARAMS['model']}")
     print(f"'q' or 'quit' to exit.\n{'=' * 10}")
     while True:
         user_input = input("You: ").strip()
